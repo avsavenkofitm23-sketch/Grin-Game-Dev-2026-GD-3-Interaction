@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 1570260727092403813}
   - component: {fileID: 7443004931956185664}
   - component: {fileID: 4446200452476962459}
-  - component: {fileID: -4857974779188089403}
   - component: {fileID: -2924580559550381113}
+  - component: {fileID: 4575478847583838657}
+  - component: {fileID: 2162471261200060298}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -171,18 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 201f5154e174f18499f12d56362ce111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
---- !u!114 &-4857974779188089403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3143976220270756026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e3bc0dc7a1b6f34f9095713842707c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FruitSlice
 --- !u!114 &-2924580559550381113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,3 +184,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a496e5f84a895418759a85cdcc1d7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitMissed
+--- !u!95 &4575478847583838657
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3143976220270756026}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e911d9d1d743f1248baeaf1abe031cbd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2162471261200060298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3143976220270756026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c249223ea45d4478e71d022fa1635b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FruitSplit
+  leftHalf: {fileID: 8600917989486821810, guid: 98a5a9c74f0c9904b99a90fe4750f88e, type: 3}
+  rightHalf: {fileID: 1832546331832804117, guid: 55b453cf7ed7cfe43a7e143d7c23d5e8, type: 3}
+  splitForce: 4
+  upwardForce: 2
